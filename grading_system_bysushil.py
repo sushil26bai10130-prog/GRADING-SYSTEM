@@ -1,19 +1,19 @@
 import math
 import statistics
 import csv
-print("Welcome to the student grading system")
-print('Get the grade and total marks of the student of their 5 subjects')
+print("Welcome to the student grading system ")
+print('Get the grade and total marks of the student of their 5 subjects ')
 print('')
 name = input('NAME OF THE STUDENT:')
 roll_no= input('ROLL NO.:')
 print('')
 print('Enter the marks of the student')
 # Taking input from the user of the marks of all the subjects
-a=int(input("English="))
-b=int(input("Hindi="))
-c=int(input("Physics="))
-d=int(input("Maths="))
-e=int(input("Chemistry="))
+a=int(input("social science="))
+b=int(input("computer= "))
+c=int(input("Physics= "))
+d=int(input("Maths= "))
+e=int(input("Chemistry= "))
 x=[a,b,c,d,e]
 total=a+b+c+d+e
 print(' ')
@@ -25,22 +25,22 @@ print('PERCENTAGE=',percentage,'%')
 print('Average=',average)
 if percentage>100:
     print('Wrongs marks entered')
-elif percentage>=90:
+elif percentage>=95:
     grade = 'A+'
-elif percentage>=80:
+elif percentage>=85:
     grade ='A'
-elif percentage>=70:
+elif percentage>=75:
     grade ='B'
-elif percentage>=60:
+elif percentage>=65:
     grade ='C'
-elif percentage>=50:
+elif percentage>=55:
     grade ='D'
-elif percentage>=40:
+elif percentage>=45:
     grade ='E'
 else:
     grade ='F'
 print('  ')
-if percentage>=40:
+if percentage>=45:
     result='PASS'
 else:
     result='FAIL'
